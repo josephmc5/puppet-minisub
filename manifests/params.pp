@@ -9,6 +9,7 @@ class minisub::params (
     $proxy_apache = hiera("proxy_apache", "false"),
 )
 {
+    $services_user = hiera("services_user")
     $log_dir = "$base_dir/minisub/log"
     $data_dir = "$base_dir/minisub/data"
     $cache_dir = "$base_dir/minisub/cache"
